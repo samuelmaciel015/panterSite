@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panter Aviation | Inicio</title>
+
+    <!--CSS & JS EXTERNO-->
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/larger.css">
+    <script src="scripts/inicio.js" defer></script>
+
+    <!--LOGO ICON-->
+    <link rel="icon" href="../imagens/logo.ico">
+
+    <!--FONTS GOOGLE API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="grid-header">
+            <div class="logo">
+                <img src="../imagens/logo.jpeg" alt="Panter Aviation Logo" onclick=reload()>
+            </div>
+            <nav id="menu">
+                <div id="container">
+                    <div id="linha1"></div>
+                    <div id="linha2"></div>
+                    <div id="linha3"></div>
+                </div>
+                
+                <a class="way-finding" href="#">INICIO</a>
+                <a href="#">SERVIÇOS</a>
+                <a href="#">CURSOS AVSEC</a>
+                <a href="#">MATRICULE-SE</a>
+                <a href="#">AJUDA</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--BANNER-->
+        <section class="banner">
+            <div class="banner_texto">
+                <h1>Venha tornar a aviação mais segura no Brasil.</h1>
+            </div>
+        </section>
+
+        <!--CONTEUDO-->
+        <section class="conteudo">
+            <p>Empresa homologada pela ANAC para Cursos AVSEC. Atuando com prestação de serviços de proteção e controle de qualidade AVSEC, em todo o Brasil!</p>
+        </section>
+
+        <!--CURSOS-->
+        <section class="cursos">
+            <h2>CURSOS AVSEC</h2>
+
+            <div class="grid-cursos">                
+                <div class="card1">
+                    <div class="front">
+                        <h3>Básico AVSEC</h3>
+                    </div>
+                    <div class="back">
+                        <p>O Curso Básico AVSEC é o curso inicial que introduz um profissional à área da Segurança da Aviação Civil. É uma vasta área de oportunidades que você terá para se desenvolver profissionalmente.</p>
+                    </div>
+                </div>
+                
+                <div class="card2">
+                    <div class="front">
+                        <h3>Inspeção de Segurança</h3>
+                    </div>
+                    <div class="back">
+                        <p>O Curso Inspeção de Segurança é o curso que especializa um profissional da área da Segurança da Aviação Civil, além das atividades habilitadas pelo curso Básico AVSEC.</p>
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <div class="front">
+                        <h3>AVSEC para Atendimento ao Passageiro</h3>
+                    </div>
+                    <div class="back">
+                        <p>O Curso AVSEC para Atendimento ao Passageiro tem a finalidade de qualificar o profissional para realizar todo atendimento ao passageiro de Operador Aéreo tanto da aviação comercial como da aviação executiva com certificação ANAC.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="ver-mais">Ver Mais</button>
+        </section>
+
+        <!--SERVIÇOS-->
+        <section class="servicos">
+            <h2>SERVIÇOS</h2>
+
+            <div class="grid-servicos">
+                <div class="servico1">
+                    <h3>Controle de Qualidade AVSEC</h3>
+                    <div class="image"></div>
+                </div>
+
+                <div class="servico2">
+                    <h3>Serviços de Proteção AVSEC</h3>
+                    <div class="image"></div>
+                </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="grid-footer">
+            <img src="imagens/panter-branco.png" alt="Panter Aviation Logo" onclick=reload()>
+
+            <div>
+                <a href="#">Inicio</a>
+                <a href="serviços.html">Serviços</a>
+                <a href="cursos.html">Cursos AVSEC</a>
+                <a href="matriculas.html">Matricule-se</a>
+                <a href="ajuda.html">Ajuda</a>
+            </div>
+
+            <div>
+                <img src="imagens/facebook.png" alt="Facebook" onclick=open_facebook()>
+                <img src="imagens/instagram.png" alt="Instagram" onclick=open_instagram()>
+                <img src="imagens/whatsapp.png" alt="WhatsApp" onclick=open_whatsapp()>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
