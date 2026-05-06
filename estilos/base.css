@@ -15,15 +15,6 @@
     font-style: normal;
   }
 
-  button{
-    padding: 8px 18px;
-    border: none;
-    background-color: var(--background-color1);
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
   /********************************HEADER********************************/
   header {
     height: 80px;
@@ -32,7 +23,7 @@
 
   .grid-header {
     display: grid;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: repeat(9, 1fr);
   }
 
   header img {
@@ -44,14 +35,20 @@
 
  /********************************MENU********************************/
   nav {
+    opacity: 0;
+    visibility: hidden;
     padding: 2rem;
     height: 80px;
     place-self: end;
     background-color: white;
+    transition: all .5s;
+    grid-column: 1/10;
   }
 
-  nav #container{
+  #container{
     cursor: pointer;
+    grid-column: 9/10;
+    align-self: center;
   }
 
   #linha1,
@@ -60,26 +57,23 @@
     border: 1px solid black;
     width: 25px;
     margin-bottom: 7px;
+    justify-self: center;
   }
 
-  .menu-open #linha1{
+  .button #linha1{
     transform: rotate(45deg);
     transition: .5s;
     position: absolute;
   }
-  .menu-open #linha2 {
+  .button #linha2 {
     transform: rotate(-45deg);
     transition: .5s;
   }
-  .menu-open #linha3 {
+  .button #linha3 {
     display: none;
-  }
-  .menu-open{
-    padding-top: 2.2rem;
   }
 
   nav a {
-    display: none;
     text-decoration: none;
     color: black;
     place-self:center;
@@ -91,7 +85,7 @@
     border-bottom: 2px solid var(--background-color1);
   }
 
-  a:hover {
+  nav a:hover {
     width:100%;
     background-color: var(--background-color1);
     transition: 0.7s;
@@ -124,15 +118,20 @@
     padding: 4rem;
   }
 
-  .conteudo p {
+  .conteudo h2 {
     text-align: center;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: normal;
   }
 
   /********************************CURSOS********************************/
   .cursos {
     padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   .cursos h2 {
@@ -176,10 +175,13 @@
     padding: 120px 0 0 0;
   }
 
-  .front h3{
+  .front h3, .front p{
     justify-self: center;
-    height: 50px;
     text-align: center;
+  }
+  .front p{
+    font-size: 14px;
+    color: var(--background-color2);
   }
 
   .back {
@@ -189,12 +191,23 @@
     padding: 80px 10px;
   }
 
-  .ver-mais{
-    margin: 50px 40%;
+  .cursos a, .servicos a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    background-color: rgb(6, 20, 74, 0.9);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
   }
   /********************************SERVIÇOS********************************/
   .servicos {
-    padding-bottom: 5rem;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
   .servicos h2 {
     text-align: center;
@@ -216,6 +229,7 @@
     height: 300px;
     padding: 2rem;
     text-align: center;
+    transition: .1s linear;
   }
 
   .image {
@@ -223,6 +237,11 @@
     height: 150px;
     background-color: lightgray;
     margin-top: 1rem;
+  }
+
+  .servico1:hover, .servico2:hover{
+    transform: scale(1.05);
+    transition: .1s linear;
   }
 
   /********************************FOOTER********************************/
@@ -255,7 +274,7 @@
     width: 150px;
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: white;
     margin: 3% 4%;
     padding: 8px 0;
     border-bottom: 2PX solid var(--background-color1);

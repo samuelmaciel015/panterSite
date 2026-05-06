@@ -1,4 +1,4 @@
-/*FLIP CARDS*/
+/********************************FLIP CARDS********************************/
 const carta1 = document.querySelector('.card1');
 const carta2 = document.querySelector('.card2');
 const carta3 = document.querySelector('.card3');
@@ -13,7 +13,7 @@ carta3.addEventListener('click', () => {
     carta3.classList.toggle('flipped');
 });
 
-/*LINKS IMAGENS*/
+/********************************FUNCTIONS ONCLICK********************************/
 function open_facebook() {
     window.open('https://www.facebook.com/panteraviation/?locale=pt_BR', '_blank');
 }
@@ -33,53 +33,30 @@ function reload() {
 /********************************MENU BUTTON********************************/
 const container = document.querySelector("#container");
 const nav = document.querySelector('#menu');
-const button = document.querySelector(".button");
-const gridDiv = document.querySelector(".grid-header");
-const logo = document.querySelector('.logo');
 const links = nav.querySelectorAll('a');
 
 container.addEventListener('click', () => {
     if (container.classList.contains('button')) {
-        nav.classList.remove('menu-open');
-        container.classList.remove('button');
+        container.classList.remove('button');   
 
-        gridDiv.style.removeProperty('display');
-
-        logo.style.removeProperty('display');
-
+        nav.style.removeProperty('opacity');
+        nav.style.removeProperty('visibility');
         nav.style.removeProperty('padding');
-        nav.style.removeProperty('width');
-        nav.style.removeProperty('height');
-        nav.style.removeProperty('position');
-        nav.style.removeProperty('display');
-        nav.style.removeProperty('grid-template-rows');
-
-        container.style.removeProperty('justify-self');
-        container.style.removeProperty('padding');
-
-        links.forEach((link) => {
-            link.style.display = 'none';
-        })
-
+        nav.style.removeProperty('transition');
 
     } else {
-        nav.classList.add('menu-open');
         container.classList.add('button');
-
-        gridDiv.style.display = 'inline';
-
-        logo.style.display = 'none';
 
         nav.style.padding = '0';
         nav.style.width = '100%';
-        nav.style.height = '400px';
+        nav.style.height = '300px';
         nav.style.position = 'relative';
-        nav.style.display = 'grid';
-        nav.style.gridTemplateRows = '80px 50px 50px 50px 50px 50px';
-        nav.style.transition = '0.5s';
-
-        container.style.justifySelf = 'end';
-        container.style.padding = '2rem';
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'column';
+        nav.style.gap = '20px';
+        nav.style.transition = 'all .5s';
+        nav.style.opacity = '1';
+        nav.style.visibility = 'visible';
 
         links.forEach((link) => {
             link.style.display = 'inline';
