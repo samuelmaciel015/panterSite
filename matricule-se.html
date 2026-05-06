@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panter Aviation | Serviços</title>
+    <title>Panter Aviation | Cursos</title>
 
     <!--CSS & JS EXTERNO-->
     <link rel="stylesheet" href="estilos/base.css">
     <link rel="stylesheet" href="estilos/larger.css">
-    <script src="scripts/inicio.js" defer></script>
+    <script src="scripts/menuButton.js" defer></script>
+    <script src="scripts/onclick.js" defer></script>
 
     <!--LOGO ICON-->
     <link rel="icon" href="../imagens/logo.ico">
@@ -17,14 +18,16 @@
     <!--FONTS GOOGLE API-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="grid-header">
             <div class="logo">
-                <img src="../imagens/logo.jpeg" alt="Panter Aviation Logo" onclick=reload()>
+                <img src="../imagens/logo.jpeg" alt="Panter Aviation Logo" onclick=reload() loading="lazy">
             </div>
             <div id="container">
                 <div id="linha1"></div>
@@ -33,9 +36,9 @@
             </div>
             <nav id="menu">
                 <a href="inicio.html">INICIO</a>
-                <a class="way-finding" href="#">SERVIÇOS</a>
+                <a href="servicos.html">SERVIÇOS</a>
                 <a href="cursos.html">CURSOS AVSEC</a>
-                <a href="#">MATRICULE-SE</a>
+                <a class="way-finding" href="#">MATRICULE-SE</a>
             </nav>
         </div>
     </header>
@@ -45,21 +48,22 @@
     <!--FOOTER-->
     <footer>
         <div class="grid-footer">
-            <img src="imagens/panter-branco.png" alt="Panter Aviation Logo" onclick=reload()>
+            <img src="imagens/panter-branco.png" alt="Panter Aviation Logo" onclick=go_top()>
 
             <div>
                 <a href="inicio.html">Inicio</a>
-                <a href="#">Serviços</a>
+                <a href="servicos.html">Serviços</a>
                 <a href="cursos.html">Cursos AVSEC</a>
                 <a href="#">Matricule-se</a>
             </div>
 
             <div>
-                <img src="imagens/facebook.png" alt="Facebook" onclick=open_facebook()>
-                <img src="imagens/instagram.png" alt="Instagram" onclick=open_instagram()>
+                <img src="imagens/facebook.png" alt="Facebook" onclick=open_facebook() loading="lazy">
+                <img src="imagens/instagram.png" alt="Instagram" onclick=open_instagram() loading="lazy">
                 <img src="imagens/whatsapp.png" alt="WhatsApp" onclick=open_whatsapp()>
             </div>
         </div>
+        <p>©<span id="current-year"></span> PANTER AVIATION - CNPJ 17.734.048/0001-26</p>
     </footer>
 </body>
 

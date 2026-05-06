@@ -1,4 +1,3 @@
-@media screen and (max-width: 1108px){
 :root {
     --background-color1: rgb(6, 20, 74);
     --background-color2: rgb(6, 20, 74, 0.8);
@@ -92,7 +91,59 @@
     color: white;
   }
 
-  /********************************MAIN********************************/
+  /********************************FOOTER********************************/
+  footer {
+    padding: 1rem;
+    background-color: rgb(6, 20, 74, 0.8);
+  }
+
+  footer img {
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .grid-footer div img {
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .grid-footer div:nth-child(2) {
+    display: grid;
+    place-items: center;
+  }
+
+  .grid-footer div:nth-child(2) a{
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin: 3% 4%;
+    padding: 8px 0;
+    border-bottom: 2PX solid var(--background-color1);
+  }
+  .grid-footer div:nth-child(2) a:hover{
+    background-color: var(--background-color1);
+    border-radius: 5px;
+    transition: 0.7s;
+    color: white;
+  }
+
+  .grid-footer div:nth-child(3) {
+    place-self: start end;
+  }
+  footer p{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding-top: 1rem;
+  }
+
+  /********************************INICIO********************************/
   /********************************BANNER********************************/
   .banner {
     height: 450px;
@@ -191,7 +242,7 @@
     padding: 80px 10px;
   }
 
-  .cursos a, .servicos a{
+  main a{
     text-decoration: none;
     color: white;
     padding: 8px 18px;
@@ -244,49 +295,28 @@
     transition: .1s linear;
   }
 
-  /********************************FOOTER********************************/
-  footer {
-    padding: 1rem;
-    background-color: rgb(6, 20, 74, 0.8);
-  }
-
-  footer img {
-    width: 100px;
-    cursor: pointer;
-  }
-
-  .grid-footer {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-  }
-
-  .grid-footer div img {
-    width: 50px;
-    cursor: pointer;
-  }
-
-  .grid-footer div:nth-child(2) {
-    display: grid;
-    place-items: center;
-  }
-
-  .grid-footer div:nth-child(2) a{
-    width: 150px;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    margin: 3% 4%;
-    padding: 8px 0;
-    border-bottom: 2PX solid var(--background-color1);
-  }
-  .grid-footer div:nth-child(2) a:hover{
-    background-color: var(--background-color1);
-    border-radius: 5px;
-    transition: 0.7s;
-    color: white;
-  }
-
-  .grid-footer div:nth-child(3) {
-    place-self: start end;
-  }
+/********************************CURSOS********************************/
+/********************************MAIN********************************/
+.curso-main{
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.curso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.curso .image{
+  height: 200px;
+}
+.curso p{
+    text-align: justify;
+}
+.curso-main a {
+  margin: 1rem 0;
+  width: 140px;
+  text-align: center;
 }

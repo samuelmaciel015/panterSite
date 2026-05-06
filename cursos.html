@@ -9,7 +9,8 @@
     <!--CSS & JS EXTERNO-->
     <link rel="stylesheet" href="estilos/base.css">
     <link rel="stylesheet" href="estilos/larger.css">
-    <script src="scripts/inicio.js" defer></script>
+    <script src="scripts/menuButton.js" defer></script>
+    <script src="scripts/onclick.js" defer></script>
 
     <!--LOGO ICON-->
     <link rel="icon" href="../imagens/logo.ico">
@@ -24,7 +25,7 @@
     <header>
         <div class="grid-header">
             <div class="logo">
-                <img src="../imagens/logo.jpeg" alt="Panter Aviation Logo" onclick=reload()>
+                <img src="../imagens/logo.jpeg" alt="Panter Aviation Logo" onclick=reload() loading="lazy">
             </div>
             <div id="container">
                 <div id="linha1"></div>
@@ -35,33 +36,132 @@
                 <a href="inicio.html">INICIO</a>
                 <a href="servicos.html">SERVIÇOS</a>
                 <a class="way-finding" href="#">CURSOS AVSEC</a>
-                <a href="#">MATRICULE-SE</a>
-                <a href="#">CONTATE-NOS</a>
+                <a href="matricule-se.html">MATRICULE-SE</a>
             </nav>
         </div>
     </header>
 
-    <main></main>
+    <main class="curso-main">
+        <section class="curso">
+            <div class="image"></div>
+            <div>
+                <h2>Curso Básico AVSEC</h2>
+                <p>O Curso Básico AVSEC é o curso inicial que introduz um profissional à área da Segurança da Aviação Civil habilitando-o
+                para diversas atividades relativas à AVSEC tais como:<br><br>- Supervisionar o trânsito de passageiros entre a área de
+                embarque e a aeronave;<br>- Identificação e controle de acesso de pessoas e objetos às áreas restritas ou controladas de
+                aeroportos;<br>- Identificação e controle de acesso de pessoas à aeronave;<br>- Identificação e inspeção de pessoas e
+                veículos em controle de acesso de veículos;<br>- Inspeção das Provisões de Bordo ou serviço de bordo;<br>- Inspeção de
+                Área Estéril;<br>- Inspeção de bagagens, carga e objetos em geral por meio de cão farejador de explosivos;<br>- Inspeção
+                de pessoas;<br>- Inspeção de segurança da aeronave;<br>- Inspeção manual de objetos;<br>- Patrulhamento e vigilância das
+                instalações de produção e armazenamento de serviço de bordo e terminais de carga ou correio;<br>- Patrulhamento e
+                vigilância da área operacional de aeroportos;<br>- Patrulhamento e vigilância de canais de controle de acesso;<br>-
+                Realizar vigilância em provisões de bordo, serviço de bordo, carga ou correio ou bagagens despachadas;<br>- Consolidação
+                do Despacho AVSEC do voo;<br>- Proteção de área estéril ou de aeronave;<br>- Recebimento das Provisões na Aeronave;<br>-
+                Recebimento e identificação de carga ou correio na cadeia segura da carga; e<br>- Verificação de Segurança da
+                Aeronave.<br><br>É uma vasta área de oportunidades que você terá para se desenvolver profissionalmente.</p>
+            </div>
+        </section>
+
+        <section class="curso">
+            <div class="image"></div>
+            <div>
+                <h2>Curso Inspeção de Segurança</h2>
+                <p>O Curso Inspeção de Segurança é o curso que especializa um profissional da área da Segurança da Aviação Civil, além das
+                atividades habilitadas pelo curso Básico AVSEC. Algumas dessas atividades são:<br><br>- Inspeção de bagagens, carga e
+                objetos em geral por meio de raios X ou tomógrafos;<br>- Inspeção de pessoas por meio de body-scan;<br>- Revista (busca
+                pessoal) em pessoas;<br>- Supervisionar e monitorar a inspeção e revista de passageiros e bagagens;<br>- Supervisionar e
+                avaliar o treinamento em serviço da certificação em inspeção de segurança; e<br>- Realizar testes de controle de
+                qualidade.<br><br>Este curso aumenta ainda mais o leque de oportunidades que você terá na área AVSEC ao se especializar
+                nas atividades listadas acima sendo um grande diferencial.</p>
+            </div>
+        </section>
+
+        <section class="curso">
+            <div class="image"></div>
+            <div>
+                <h2>Curso AVSEC para Operador Aéreo</h2>
+                <p>O Curso AVSEC para Operador Aéreo tem a finalidade de ampliar e consolidar a competência técnica necessária à supervisão
+                das atividades AVSEC, gerenciar as medidas preventivas de segurança da aviação civil a serem aplicadas no
+                desenvolvimento das atividades de gerenciamento de Operadores Aéreos e preparar profissionais do Sistema de Aviação
+                Civil para atuar em Auditorias, Inspeções e Análises bem como gerenciar o Sistema de Controle de Qualidade AVSEC de
+                Operadores Aéreos, de acordo com a legislação em vigor. Algumas dessas atividades estão listadas abaixo:<br><br>-
+                Consolidação do Despacho AVSEC do voo;<br>- Supervisionar e garantir a implementação dos controles de segurança e
+                medidas de resposta pelo operador aéreo em âmbito nacional ou de aeródromo;<br>- Supervisionar e monitorar a inspeção e
+                revista de passageiros e bagagens;<br>- Supervisionar e avaliar o treinamento em serviço da certificação em inspeção de
+                segurança;<br>- Representar operador aéreo ou de aeródromo em eventos de segurança exigidos em norma, como CSA, ESAIA e
+                ESAB;<br>- Realizar atividade de controle de qualidade AVSEC, para operador aéreo, exceto testes; e<br>- Realizar testes
+                de controle de qualidade.</p>
+            </div>
+        </section>
+
+        <section class="curso">
+            <div class="image"></div>
+            <div>
+                <h2>Curso AVSEC para Operador de Aeródromo</h2>
+                <p>O Curso AVSEC para Operador de Aeródromo tem a finalidade de ampliar e consolidar a competência técnica necessária à
+                supervisão das atividades AVSEC, gerenciar as medidas preventivas de segurança da aviação civil a serem aplicadas no
+                desenvolvimento das atividades de gerenciamento de Operadores de Aeródromos e preparar profissionais do Sistema de
+                Aviação Civil para atuar em Auditorias, Inspeções, Análises, Testes e Exercícios bem como gerenciar o Sistema de
+                Controle de Qualidade AVSEC de Operadores de Aeródromos, de acordo com a legislação em vigor. Algumas dessas atividades
+                estão listadas abaixo:<br><br>- Avaliar os projetos de obras aeroportuárias, para garantir que os aspectos da AVSEC
+                estejam contemplados na concepção e execução dos projetos;<br>- Coordenar e gerir setor de segurança aeroportuária;<br>-
+                Supervisionar e monitorar a inspeção e revista de passageiros e bagagens;<br>- Supervisionar e avaliar o treinamento em
+                serviço da certificação em inspeção de segurança;<br>- Representar operador aéreo ou de aeródromo em eventos de
+                segurança exigidos em norma, como CSA, ESAIA e ESAB;<br>- Realizar atividade de controle de qualidade AVSEC, para
+                operador aeroportuário, exceto testes; e<br>- Realizar testes de controle de qualidade.</p>
+            </div>
+        </section>
+
+        <section class="curso">
+            <div class="image"></div>
+            <div>
+                <h2>Curso AVSEC para Tripulante</h2>
+                <p>O Curso AVSEC para Tripulante tem a finalidade de qualificar o tripulante preparando-os para assegurar a AVSEC tanto em
+                operações de solo como em voo conforme regulamentação da ANAC, RBAC 110. Algumas dessas atividades estão listadas
+                abaixo:<br><br>- Supervisionar o trânsito de passageiros entre a área de embarque e a aeronave;<br>- Atendimento a
+                Passageiro em voo;<br>- Operar aeronave em exploração de serviço de transporte aéreo públicos;<br>- Identificação e
+                controle de acesso de pessoas à aeronave;<br>- Realizar vigilância em provisões de bordo, serviço de bordo, carga ou
+                correio ou bagagens despachadas;<br>- Consolidação do Despacho AVSEC do voo;<br>- Proteção de área estéril ou de
+                aeronave;<br>- Recebimento das Provisões na Aeronave;<br>- Verificação de Segurança da Aeronave; e<br>- Contenção de
+                passageiro insdisciplinado a bordo de aeronave em voo.</p>
+            </div>
+        </section>
+
+        <section class="curso">
+            <div class="image"></div>
+            <div>
+                <h2>Curso AVSEC para Atendimento ao Passageiro</h2>
+                <p>O Curso AVSEC para Atendimento ao Passageiro tem a finalidade de qualificar o profissional para realizar todo
+                atendimento ao passageiro de Operador Aéreo tanto da aviação comercial como da aviação executiva com certificação ANAC.
+                Algumas dessas atividades estão listadas abaixo:<br><br>- Atendimento do Passageiro no check-in (despacho de passageiro)
+                ou identificação e aceitação (conciliação) de bagagem despachada;<br>- Supervisionar o trânsito de passageiros entre a
+                área de embarque e a aeronave;<br>- Identificação e controle de acesso de pessoas à aeronave; e<br>- Proteção de área
+                estéril ou de aeronave.</p>
+            </div>
+        </section>
+
+        <a href="matricule-se.html">Matricule-se</a>
+    </main>
 
     <!--FOOTER-->
     <footer>
         <div class="grid-footer">
-            <img src="imagens/panter-branco.png" alt="Panter Aviation Logo" onclick=reload()>
-
+            <img src="imagens/panter-branco.png" alt="Panter Aviation Logo" onclick=go_top()>
+    
             <div>
                 <a href="inicio.html">Inicio</a>
                 <a href="servicos.html">Serviços</a>
                 <a href="#">Cursos AVSEC</a>
-                <a href="#">Matricule-se</a>
-                <a href="#">Contate-nos</a>
+                <a href="matricule-se.html">Matricule-se</a>
             </div>
-
+    
             <div>
-                <img src="imagens/facebook.png" alt="Facebook" onclick=open_facebook()>
-                <img src="imagens/instagram.png" alt="Instagram" onclick=open_instagram()>
+                <img src="imagens/facebook.png" alt="Facebook" onclick=open_facebook() loading="lazy">
+                <img src="imagens/instagram.png" alt="Instagram" onclick=open_instagram() loading="lazy">
                 <img src="imagens/whatsapp.png" alt="WhatsApp" onclick=open_whatsapp()>
             </div>
         </div>
+        <p>©<span id="current-year"></span> PANTER AVIATION - CNPJ 17.734.048/0001-26</p>
     </footer>
 </body>
 
