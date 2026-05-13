@@ -9,7 +9,8 @@
     <!--CSS & JS EXTERNO-->
     <link rel="stylesheet" href="estilos/base.css">
     <link rel="stylesheet" href="estilos/larger.css">
-    <script src="scripts/inicio.js" defer></script>
+    <script src="scripts/menuButton.js" defer></script>
+    <script src="scripts/onclick.js"></script>
 
     <!--LOGO ICON-->
     <link rel="icon" href="../imagens/logo.ico">
@@ -35,31 +36,61 @@
                 <a href="inicio.html">INICIO</a>
                 <a class="way-finding" href="#">SERVIÇOS</a>
                 <a href="cursos.html">CURSOS AVSEC</a>
-                <a href="#">MATRICULE-SE</a>
+                <a href="matricule-se.html">MATRICULE-SE</a>
             </nav>
         </div>
     </header>
 
-    <main></main>
+    <main class="servico-main">
+        <section class="servico">
+            <div class="image"></div>
+            <div>
+                <h2>Serviço de Proteção AVSEC para Operadores Aéreos e Operadores de Aérodromos</h2>
+                <p>Planejamos e executamos serviços de AVSEC para nossos clientes. Integramos recursos humanos com o que existe de mais
+                moderno em Segurança da Aviação Civil, diagnosticamos as vulnerabilidades e atuamos na melhoria da qualidade, oferecendo
+                uma solução completa e eficiente de segurança.</p>
+            </div>
+        </section>
+        <section class="servico">
+            <div class="image"></div>
+            <div>
+                <h2>Controle de Qualidade AVSEC</h2>
+                <p>Oferecemos serviços nas atividades de Controle de Qualidade AVSEC tais como Auditorias, Inspeções, Testes e Exercícios
+                bem como o gerenciamento e monitoramento do sistema de Qualidade AVSEC, atuando como um elo importante para a dinâmica
+                organizacional, na busca da melhor eficiência para os serviços de Segurança da Aviação Civil de nosos clientes.</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Entre em contato</h3>
+            <div class="contato-links">
+                <img src="imagens/whatsapp.png" alt="WhatsApp" onclick=open_whatsapp() loading="lazy">
+                <p>Whats App - (11) 2447-0709</p>
+                <img src="imagens/email.png" alt="E-mail" loading="lazy">
+                <p>E-mail - contato@panteraviation.com.br</p>
+            </div>
+        </section>
+    </main>
 
     <!--FOOTER-->
     <footer>
         <div class="grid-footer">
-            <img src="imagens/panter-branco.png" alt="Panter Aviation Logo" onclick=reload()>
-
+            <img src="imagens/panter-branco.png" alt="Panter Aviation Logo" onclick=go_top()>
+    
             <div>
                 <a href="inicio.html">Inicio</a>
-                <a href="#">Serviços</a>
+                <a href="servicos.html">Serviços</a>
                 <a href="cursos.html">Cursos AVSEC</a>
                 <a href="#">Matricule-se</a>
             </div>
-
+    
             <div>
-                <img src="imagens/facebook.png" alt="Facebook" onclick=open_facebook()>
-                <img src="imagens/instagram.png" alt="Instagram" onclick=open_instagram()>
+                <img src="imagens/facebook.png" alt="Facebook" onclick=open_facebook() loading="lazy">
+                <img src="imagens/instagram.png" alt="Instagram" onclick=open_instagram() loading="lazy">
                 <img src="imagens/whatsapp.png" alt="WhatsApp" onclick=open_whatsapp()>
             </div>
         </div>
+        <p>©<span id="current-year"></span> PANTER AVIATION - CNPJ 17.734.048/0001-26</p>
     </footer>
 </body>
 
