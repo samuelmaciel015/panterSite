@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panter Aviation | Inicio</title>
+
+    <!--CSS EXTERNO-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--JS EXTERNO-->
+    <script src="scripts/menuButton.js" defer></script>
+    <script src="scripts/onclick.js" defer></script>
+    <script src="scripts/flipCards.js" defer></script>
+
+    <!--LOGO ICON-->
+    <link rel="icon" href="images/logo.ico">
+
+    <!--FONTS GOOGLE API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!--SOCIAL MEDIA META TAGS-->
+    <meta proerty="og:title" content="Panter Aviation">
+    <meta proerty="og:description" content="Empresa homologada pela ANAC para ministrar cursos AVSEC. Atuando com prestação de serviços de proteção e controle de qualidade AVSEC, em todo o Brasil!">
+    <meta proerty="og:img" content="">
+    <meta proerty="og:url" content="">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="grid-header">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Panter Aviation Logo" onclick=reload() loading="lazy">
+            </div>
+
+            <!--MENU BUTTON-->
+            <div id="container">
+                <div id="linha1"></div>
+                <div id="linha2"></div>
+                <div id="linha3"></div>
+            </div>
+            <nav id="menu">
+                <a class="way-finding" href="#">INICIO</a>
+                <a href="servicos.html">SERVIÇOS</a>
+                <a href="cursos.html">CURSOS AVSEC</a>
+                <a href="matricule-se.html">MATRICULE-SE</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main>
+        <!--BANNER-->
+        <section class="banner">
+            <div class="banner_texto">
+                <h1>Venha tornar a aviação mais segura no Brasil.</h1>
+            </div>
+        </section>
+
+        <!--CONTEUDO-->
+        <section class="conteudo">
+            <h2>Empresa homologada pela ANAC para ministrar cursos AVSEC. Atuando com prestação de serviços de proteção e controle de qualidade AVSEC, em todo o Brasil!</h2>
+        </section>
+
+        <!--CURSOS-->
+        <section class="cursos">
+            <h2>CURSOS AVSEC</h2>
+
+            <div class="grid-cursos">                
+                <div class="card1">
+                    <div class="front">
+                        <h3>Básico AVSEC</h3>
+                        <p>(clique aqui)</p>
+                    </div>
+                    <div class="back">
+                        <p>O Curso Básico AVSEC é o curso inicial que introduz um profissional à área da Segurança da Aviação Civil. É uma vasta área de oportunidades que você terá para se desenvolver profissionalmente.</p>
+                    </div>
+                </div>
+                
+                <div class="card2">
+                    <div class="front">
+                        <h3>Inspeção de Segurança</h3>
+                        <p>(clique aqui)</p>
+                    </div>
+                    <div class="back">
+                        <p>O Curso Inspeção de Segurança é o curso que especializa um profissional da área da Segurança da Aviação Civil, além das atividades habilitadas pelo curso Básico AVSEC.</p>
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <div class="front">
+                        <h3>AVSEC para Atendimento ao Passageiro</h3>
+                        <p>(clique aqui)</p>
+                    </div>
+                    <div class="back">
+                        <p>O Curso AVSEC para Atendimento ao Passageiro tem a finalidade de qualificar o profissional para realizar todo atendimento ao passageiro de Operador Aéreo tanto da aviação comercial como da aviação executiva com certificação ANAC.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="cursos.html">Ver Mais</a>
+        </section>
+
+        <!--SERVIÇOS-->
+        <section class="servicos">
+            <h2>SERVIÇOS</h2>
+
+            <div class="grid-servicos">
+                <div class="servico1">
+                    <h3>Controle de Qualidade AVSEC</h3>
+                    <div class="image"></div>
+                </div>
+
+                <div class="servico2">
+                    <h3>Serviços de Proteção AVSEC</h3>
+                    <div class="image"></div>
+                </div>
+            </div>
+
+            <a href="servicos.html">Saber Mais</a>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="grid-footer">
+            <img src="images/panter-branco.png" alt="Panter Aviation Logo" onclick=go_top() loading="lazy">
+
+            <div>
+                <a href="#">Inicio</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="cursos.html">Cursos AVSEC</a>
+                <a href="matricule-se.html">Matricule-se</a>
+            </div>
+
+            <div>
+                <img src="images/facebook.png" alt="Facebook" onclick=open_facebook() loading="lazy">
+                <img src="images/instagram.png" alt="Instagram" onclick=open_instagram() loading="lazy">
+                <img src="images/whatsapp.png" alt="WhatsApp" onclick=open_whatsapp() loading="lazy">
+            </div>
+        </div>
+        <p>©<span id="current-year"></span> PANTER AVIATION - CNPJ 17.734.048/0001-26</p>
+    </footer>
+</body>
+</html>

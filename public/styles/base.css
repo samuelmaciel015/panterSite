@@ -1,0 +1,432 @@
+:root {
+    --background-color1: rgb(6, 20, 74);
+    --background-color2: rgb(6, 20, 74, 0.8);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+  }
+
+  /********************************HEADER********************************/
+  header {
+    height: 80px;
+    text-align: center;
+  }
+
+  .grid-header {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  header img {
+    width: 80px;
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+  }
+
+ /********************************MENU********************************/
+  nav {
+    opacity: 0;
+    visibility: hidden;
+    padding: 2rem;
+    height: 80px;
+    place-self: end;
+    background-color: white;
+    transition: all .5s;
+    grid-column: 1/10;
+  }
+
+  #container{
+    cursor: pointer;
+    grid-column: 9/10;
+    align-self: center;
+  }
+
+  #linha1,
+  #linha2,
+  #linha3{
+    border: 1px solid black;
+    width: 25px;
+    margin-bottom: 7px;
+    justify-self: center;
+  }
+
+  .button #linha1{
+    transform: rotate(45deg);
+    transition: .5s;
+    position: absolute;
+  }
+  .button #linha2 {
+    transform: rotate(-45deg);
+    transition: .5s;
+  }
+  .button #linha3 {
+    display: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+    place-self:center;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+
+  .way-finding{
+    border-bottom: 2px solid var(--background-color1);
+  }
+
+  nav a:hover {
+    width:100%;
+    background-color: var(--background-color1);
+    transition: 0.7s;
+    color: white;
+  }
+
+  /********************************FOOTER********************************/
+  footer {
+    padding: 1rem;
+    background-color: rgb(6, 20, 74, 0.8);
+  }
+
+  footer img {
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .grid-footer div img {
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .grid-footer div:nth-child(2) {
+    display: grid;
+    place-items: center;
+  }
+
+  .grid-footer div:nth-child(2) a{
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin: 3% 4%;
+    padding: 8px 0;
+    border-bottom: 2PX solid var(--background-color1);
+  }
+  .grid-footer div:nth-child(2) a:hover{
+    background-color: var(--background-color1);
+    border-radius: 5px;
+    transition: 0.7s;
+    color: white;
+  }
+
+  .grid-footer div:nth-child(3) {
+    place-self: start end;
+  }
+  footer p{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding-top: 1rem;
+  }
+
+  /********************************INICIO********************************/
+  /********************************BANNER********************************/
+  .banner {
+    height: 450px;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 8rem 4rem;
+  }
+
+  .banner_texto {
+    width: 400px;
+  }
+
+  .banner_texto h1 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 3px 3px black;
+  }
+
+  /********************************CONTEUDO********************************/
+  .conteudo {
+    background-color: var(--background-color2);
+    padding: 4rem;
+  }
+
+  .conteudo h2 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  /********************************CURSOS********************************/
+  .cursos {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cursos h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .grid-cursos{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1rem;
+    place-items: center;
+  }
+  
+  /********************************FLIP CARDS********************************/
+  .card1,
+  .card2,
+  .card3 {
+    border: 4px solid rgb(159, 179, 212);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    cursor: pointer;
+    perspective: 1000px;
+  }
+
+  .card1.flipped,
+  .card2.flipped,
+  .card3.flipped {
+    transform: rotateY(-180deg);
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 120px 0 0 0;
+  }
+
+  .front h3, .front p{
+    justify-self: center;
+    text-align: center;
+  }
+  .front p{
+    font-size: 14px;
+    color: var(--background-color2);
+  }
+
+  .back {
+    transform: rotateY(-180deg);
+    padding: 0 10px;
+    text-align:center;
+    padding: 80px 10px;
+  }
+
+  main a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    background-color: rgb(6, 20, 74, 0.9);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  /********************************SERVIÇOS********************************/
+  .servicos {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .servicos h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .grid-servicos {
+    display: grid;
+    gap: 2rem;
+    place-items: center;
+  }
+
+  .servico1,
+  .servico2 {
+    border: 4px solid rgb(159, 179, 212);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 300px;
+    padding: 2rem;
+    text-align: center;
+    transition: .1s linear;
+  }
+
+  .image {
+    width: 100%;
+    height: 150px;
+    background-color: lightgray;
+    margin-top: 1rem;
+  }
+
+  .servico1:hover, .servico2:hover{
+    transform: scale(1.05);
+    transition: .1s linear;
+  }
+
+/********************************CURSOS E SERVIÇOS********************************/
+/********************************MAIN********************************/
+.curso-main, .servico-main{
+  padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.curso, .servico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.curso .image, .servico .image{
+  width: 100%;
+  height: 200px;
+}
+.curso p, .servico p{
+    text-align: justify;
+}
+.curso-main a{
+  margin: 1rem 0;
+  width: 140px;
+  text-align: center;
+}
+.servico-main section:nth-child(3) {
+  display: none;
+}
+
+
+/********************************FORMULARIO********************************/
+/********************************MAIN********************************/
+
+.formulario-main h1{
+  text-align: center;
+  padding: 1rem;
+}
+
+.formulario-main p{
+  text-align: justify;
+  padding: 1rem;
+}
+
+form{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form fieldset{
+  border: 4px solid rgb(159, 179, 212);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 440px;
+}
+
+label{
+  display: grid;
+  grid-template-columns: repeat(auto-fill);
+}
+
+.radio{
+  display: flex;
+  gap: .3rem;
+}
+
+legend{
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--background-color1);
+  padding: 0 .20rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  padding: 8px;
+  border: 1px solid rgb(159, 179, 212);
+  border-radius: 4px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #ddd;
+}
+
+input[type="file"]{
+  display: none;
+}
+.button-upload{
+  display: inline-block;
+  padding: 12px 20px;
+  color: rgb(6, 20, 74);
+  border-color: rgb(6, 20, 74, 0.9);
+  border-style: dashed;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 440px;
+}
+
+#data-nascimento{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  column-gap: 5px;
+}
+
+.container1{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 5px;
+}
+
+.formulario-main button[type="submit"]{
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  background-color: rgb(6, 20, 74, 0.9);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.enviar{
+  min-width: 440px;
+}
+.nome-arquivo p{
+  padding: 0;
+}
