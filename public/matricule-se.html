@@ -63,7 +63,7 @@
 
         <!--FORMULÁRIO DE INSCRIÇÃO-->
         <!--ALTERAR ACTION-->
-        <form action="/enviar" method="POST" enctype="multipart/form-data" id="formulario">
+        <form action="/enviar" method="post" enctype="multipart/form-data" id="formulario">
                 <label for="nome">Nome Completo:
                     <input type="text" id="nome" name="nome" required autocomplete="name">
                 </label>
@@ -311,14 +311,25 @@
                         <input type="text" id="cpf" name="cpf" placeholder="Somente números" required>
                     </label>
 
-                    <label for="aviacao" class="radio">Trabalha na aviação?
-                        <input type="radio" id="aviacao" name="aviacao" value="Sim" required>Sim
-                        <input type="radio" id="aviacao" name="aviacao" value="Não" required>Não
-                    </label>
+                    <div class="container2">
+                        <span>Trabalha na aviação?</span>
+                        <label for="sim-aviacao" class="radio">
+                            <input type="radio" id="sim-aviacao" name="aviacao" value="Sim" required>Sim
+                        </label>
+                        <label for="nao-aviacao" class="radio">
+                            <input type="radio" id="nao-aviacao" name="aviacao" value="Não" required>Não
+                        </label>
+                    </div>
 
-                    <label for="seguranca" class="radio">Trabalha com Segurança AVSEC?
-                        <input type="radio" id="seguranca" name="seguranca" value="Sim" required>Sim
-                        <input type="radio" id="seguranca" name="seguranca" value="Não" required>Não
+                    <div class="container2">
+                        <span>Trabalha com Segurança AVSEC?</span>
+                        <label for="sim-seguranca" class="radio">
+                            <input type="radio" id="sim-seguranca" name="seguranca" value="Sim" required>Sim
+                        </label>
+                        <label for="nao-seguranca" class="radio">
+                            <input type="radio" id="nao-seguranca" name="seguranca" value="Não" required>Não
+                        </label>
+                    </div>
                     </label>
 
                     <label for="empresa">Nome da empresa em que trabalha:
@@ -326,7 +337,7 @@
                     </label>
 
                     <label for="escolaridade">Escolaridade:
-                        <select name="Nível de Escolaridade" id="escolaridade" required>
+                        <select name="escolaridade" id="escolaridade" required>
                             <option value="">Selecione a escolaridade</option>
                             <option value="Ensino Médio Completo / Superior Incompleto">Ensino Médio Completo / Superior Incompleto</option>
                             <option value="Superior Completo">Superior Completo</option>
@@ -433,6 +444,7 @@
                 <img src="images/whatsapp.png" alt="WhatsApp" onclick=open_whatsapp() loading="lazy">
             </div>
         </div>
+        <p>contato@panteraviation.com.br</p>
         <p>©<span id="current-year"></span> PANTER AVIATION - CNPJ 17.734.048/0001-26</p>
     </footer>
 </body>

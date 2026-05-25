@@ -84,6 +84,20 @@ btnEnviar.addEventListener('click', () => {
 
 })
 
+/*formulario.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const dados = new FormData(e.target);
+
+    await fetch("/enviar", {
+        method: "POST",
+        body: dados
+    });
+
+    location.reload();
+    window.scrollTo(0, 0);
+})*/
+
 //formatar CPF
 cpfInput.addEventListener('input', (e) => {
     let cpf = e.target.value.replace(/\D/g, "");

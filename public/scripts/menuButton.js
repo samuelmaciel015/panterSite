@@ -33,7 +33,7 @@ container.addEventListener('click', () => {
 
 function verificarTamanhoTela() {
     const largura = window.innerWidth;
-    if (largura >= 1108) {
+    if (largura >= 1024) {
         nav.style.removeProperty('width');
         nav.style.removeProperty('height');
         nav.style.removeProperty('position');
