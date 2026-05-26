@@ -449,9 +449,33 @@ input[type="file"] {
   cursor: pointer;
   border-radius: 5px;
 }
+
 .enviar {
   min-width: 440px;
 }
+
 .nome-arquivo p {
   padding: 0;
+}
+
+.arquivo-selecionado {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  margin: 4px 0;
+  padding: 4px;
+  border: 2px solid rgb(6, 20, 74, 0.9);
+  border-radius: 5px;
+}
+
+.arquivo-selecionado p {
+  align-self: center;
+}
+
+.arquivo-selecionado button {
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b3aae3;
+  color: rgb(6, 20, 74, 0.9);
+  cursor: pointer;
 }

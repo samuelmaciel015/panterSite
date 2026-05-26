@@ -74,29 +74,15 @@ btnEnviar.addEventListener('click', () => {
     formulario.addEventListener('submit', () => {
         if (validarCPF(cpf) == false) {
             event.preventDefault();
-            alert("CPF inválido");
+            alert(`CPF inválido - ${cpf}`);
         }
         else if (validarCEP(cep) == false) {
             event.preventDefault();
-            alert("CEP inválido");
+            alert(`CEP inválido - ${cep}`);
         }
     })
 
 })
-
-/*formulario.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const dados = new FormData(e.target);
-
-    await fetch("/enviar", {
-        method: "POST",
-        body: dados
-    });
-
-    location.reload();
-    window.scrollTo(0, 0);
-})*/
 
 //formatar CPF
 cpfInput.addEventListener('input', (e) => {
@@ -154,17 +140,45 @@ rgInput.addEventListener('blur', () => {
 })
 
 //escrever o nome do(s) arquivo(s) selecionados
-fileInput.addEventListener('change', () => {
-    const nomes = [];
-
-    for (let arquivo of fileInput.files) {
-        nomes.push(arquivo.name);
-        
-    }
+fileInput.addEventListener('change', atualizarLista);
     
-    nomes.forEach(nome => {
-        const newP = document.createElement('p')
-        newP.textContent = nome;
-        div.appendChild(newP);
+function atualizarLista() {
+    div.innerHTML = "";
+    
+    [...fileInput.files].forEach((arquivo, indice) => {
+        const newDiv = document.createElement('div');
+        const newP = document.createElement('p');
+        const newButton = document.createElement('button');
+
+        newP.textContent = arquivo.name;
+
+        newButton.innerHTML = '&#215;';
+        newButton.type = 'button';
+        newButton.dataset.index = indice;
+
+        newDiv.setAttribute('class', 'arquivo-selecionado');
+
+        newDiv.appendChild(newP);
+        newDiv.appendChild(newButton);
+        div.appendChild(newDiv);
+    }); 
+}
+
+//alterar lista
+div.addEventListener('click', (e) => {
+    if (e.target.tagName !== 'BUTTON') return;
+
+    const i = Number(e.target.dataset.index);
+
+    const novaLista = new DataTransfer();
+
+    [...fileInput.files].forEach((arquivo, indice) => {
+        if (indice !== i) {
+            novaLista.items.add(arquivo);
+        }
     });
+
+    fileInput.files = novaLista.files;
+
+    atualizarLista();
 });
