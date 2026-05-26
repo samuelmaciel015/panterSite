@@ -1,10 +1,25 @@
 @media screen and (max-width: 470px){
+    .grid-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-footer div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+    }
+
     .banner_texto {
         width: 100%;
     }
 
     .banner_texto h1 {
         font-size: 40px;
+    }
+
+    .servico1:hover, .servico2:hover {
+        transform: initial;
+        transition: initial;
     }
 
     form fieldset {
