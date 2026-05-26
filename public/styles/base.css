@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -388,17 +389,11 @@ legend {
   padding: 0 .20rem;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select {
+input[type="text"], input[type="email"], input[type="tel"], select {
   padding: 8px;
   border: 1px solid rgb(159, 179, 212);
   border-radius: 4px;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 4px;
-  background-color: #ddd;
+  width: 100%;
 }
 
 input[type="file"] {
