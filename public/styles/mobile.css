@@ -1,7 +1,13 @@
 @media screen and (max-width: 470px){
-    .grid-footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    footer {
+        padding: 1rem .5rem;
+    }
+    footer img {
+        width: 70px;
+    }
+
+    .grid-footer div:nth-child(2) a {
+        width: 150px;
     }
 
     .grid-footer div:nth-child(3) {
@@ -18,8 +24,8 @@
     }
 
     .servico1:hover, .servico2:hover {
-        transform: initial;
-        transition: initial;
+        transform: none;
+        transition: none;
     }
 
     form fieldset {
