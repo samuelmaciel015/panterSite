@@ -54,6 +54,16 @@ app.get("/matricule-se", (req, res) => {
     );
 });
 
+app.get("/sucesso", (req, res) => {
+    res.sendFile(
+        path.join(
+            __dirname,
+            "public",
+            "sucesso.html"
+        )
+    );
+});
+
 app.post(
 "/enviar",
 upload.array("arquivos", 10),
@@ -120,9 +130,7 @@ attachments: req.files
 
 });
 
-res.json({
-success: true
-});
+res.redirect("/sucesso");
 
 } catch (erro) {
 

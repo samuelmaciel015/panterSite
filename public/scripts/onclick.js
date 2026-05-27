@@ -13,3 +13,15 @@ function go_top() {
 function reload() {
     window.location.reload();
 }
+function go_inicio() {
+    window.location.href = 'inicio.html';
+}
+function go_servicos() {
+    window.location.href = 'servicos.html';
+}
+function go_cursos() {
+    window.location.href = 'cursos.html';
+}
+function go_matricule_se() {
+    window.location.href = 'matricule-se.html';
+}

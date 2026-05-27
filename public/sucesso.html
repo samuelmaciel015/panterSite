@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panter Aviation | Serviços</title>
+    <title>Panter Aviation | Sucesso</title>
 
     <!--CSS EXTERNO-->
     <link rel="stylesheet" href="styles/base.css">
@@ -14,6 +14,8 @@
     <!--JS EXTERNO-->
     <script src="scripts/menuButton.js" defer></script>
     <script src="scripts/onclick.js" defer></script>
+    <script src="scripts/buscaCep.js" defer></script>
+    <script src="scripts/validador.js" defer></script>
 
     <!--LOGO ICON-->
     <link rel="icon" href="images/logo.ico">
@@ -21,75 +23,68 @@
     <!--FONTS GOOGLE API-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
 
-    <!--SOCIAL MEDIA META TAGS-->
+    <!--ADD SOCIAL MEDIA META TAGS-->
     <meta proerty="og:title" content="Panter Aviation">
-    <meta proerty="og:description" content="Empresa homologada pela ANAC para ministrar cursos AVSEC. Atuando com prestação de serviços de proteção e controle de qualidade AVSEC, em todo o Brasil!">
+    <meta proerty="og:description"
+        content="Empresa homologada pela ANAC para ministrar cursos AVSEC. Atuando com prestação de serviços de proteção e controle de qualidade AVSEC, em todo o Brasil!">
     <meta proerty="og:img" content="">
     <meta proerty="og:url" content="">
+
 </head>
 
-<body class="servicos-body">
+<body>
     <!--HEADER-->
     <header>
         <div class="grid-header">
             <div class="logo">
                 <img src="images/logo.jpeg" alt="Panter Aviation Logo" onclick=reload() loading="lazy">
             </div>
+
             <!--MENU BUTTON-->
             <div id="container">
                 <div id="linha1"></div>
                 <div id="linha2"></div>
                 <div id="linha3"></div>
             </div>
+
             <nav id="menu">
                 <a href="inicio.html">INICIO</a>
-                <a class="way-finding" href="#">SERVIÇOS</a>
+                <a href="servicos.html">SERVIÇOS</a>
                 <a href="cursos.html">CURSOS AVSEC</a>
-                <a href="matricule-se.html">MATRICULE-SE</a>
+                <a class="way-finding" href="#">MATRICULE-SE</a>
             </nav>
         </div>
     </header>
 
     <!--MAIN-->
-    <main class="servico-main">
-        <section class="servico">
-            <div class="image">
-                <img src="images/servico.jpg" alt="Serviços de Proteção AVSEC" loading="lazy">
-            </div>
-            <div>
-                <h2>Serviço de Proteção AVSEC para Operadores Aéreos e Operadores de Aérodromos</h2>
-                <p>Planejamos e executamos serviços de AVSEC para nossos clientes. Integramos recursos humanos com o que existe de mais
-                moderno em Segurança da Aviação Civil, diagnosticamos as vulnerabilidades e atuamos na melhoria da qualidade, oferecendo
-                uma solução completa e eficiente de segurança.</p>
-            </div>
-        </section>
+    <main class="sucesso-main">
+        <h1>Sua matrícula foi realizada com sucesso!</h1>
+        <p>Muito obrigado por se matricular e confiar em nossos serviços. Entraremos em contato para confirmar sua inscrição e fornecer mais detalhes.</p>
 
-        <section class="servico">
-            <div class="image">
-                <img src="images/controle.jpg" alt="Controle de Qualidade AVSEC" loading="lazy">
-            </div>
-            <div>
-                <h2>Controle de Qualidade AVSEC</h2>
-                <p>Oferecemos serviços nas atividades de Controle de Qualidade AVSEC tais como Auditorias, Inspeções, Testes e Exercícios
-                bem como o gerenciamento e monitoramento do sistema de Qualidade AVSEC, atuando como um elo importante para a dinâmica
-                organizacional, na busca da melhor eficiência para os serviços de Segurança da Aviação Civil de nosos clientes.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Contate-nos</h2>
+        <section class="menu-central">
+            <label for="inicio">
+                <p>Inicio</p>
+                <button id="inicio" onclick=go_inicio()></button>
+            </label>
             
-            <div>
-                <img src="images/whatsapp.png" alt="Contato Panter Aviation" loading="lazy">
-                <p>11 2447-0709</p>
-            </div>
-
-            <div>
-                <img src="images/email.png" alt="Contato Panter Aviation" loading="lazy">
-                <p>contato@panteraviation.com.br</p>
-            </div>
+            <label for="servicos">
+                <p>Serviços</p>
+                <button id="servicos" onclick=go_servicos()></button>
+            </label>
+            
+            <label for="cursos">
+                <p>Cursos</p>
+                <button id="cursos" onclick=go_cursos()></button>
+            </label>
+            
+            <label for="matricule-se">
+                <p>Matricule-se</p>
+                <button id="matricule-se" onclick=go_matricule_se()></button>
+            </label>
         </section>
     </main>
 
@@ -97,14 +92,14 @@
     <footer>
         <div class="grid-footer">
             <img src="images/panter-branco.png" alt="Panter Aviation Logo" onclick=go_top() loading="lazy">
-    
+
             <div>
                 <a href="inicio.html">Inicio</a>
                 <a href="servicos.html">Serviços</a>
                 <a href="cursos.html">Cursos AVSEC</a>
                 <a href="#">Matricule-se</a>
             </div>
-    
+
             <div>
                 <img src="images/facebook.png" alt="Facebook" onclick=open_facebook() loading="lazy">
                 <img src="images/instagram.png" alt="Instagram" onclick=open_instagram() loading="lazy">

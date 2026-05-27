@@ -23,6 +23,24 @@
         font-size: 40px;
     }
 
+    .cursos h2 {
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: var(--background-color2);
+        width: 100%;
+        color: white;
+    }
+
+    .servicos h2 {
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: var(--background-color2);
+        width: 100%;
+        color: white;
+    }
+
     .servico1:hover, .servico2:hover {
         transform: none;
         transition: none;
