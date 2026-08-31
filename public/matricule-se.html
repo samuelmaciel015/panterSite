@@ -78,6 +78,9 @@
                         <option value="AVSEC para Operador de Aeródromo">AVSEC para Operador de Aeródromo</option>
                         <option value="AVSEC para Tripulante">AVSEC para Tripulante</option>
                         <option value="AVSEC para Atendimento ao Passageiro">AVSEC para Atendimento ao Passageiro</option>
+                        <option value="AVSEC para Operações de Solo">AVSEC para Operações de Solo</option>
+                        <option value="AVSEC para Carga Aérea">AVSEC para Carga Aérea</option>
+                        <option value="AVSEC para Vigilante">AVSEC para Vigilante</option>
                     </select>
                 </label>
 
@@ -351,6 +354,12 @@
                 <fieldset>
                     <legend>Contatos</legend>
 
+                    <label for="cep">CEP:
+                        <input type="text" id="cep" name="cep" placeholder="Somente números" required autocomplete="postal-code">
+                    </label>
+
+                    <button type="submit" id="buscar-cep">Buscar Endereço</button>
+
                     <label for="logradouro">Logradouro:
                         <input type="text" id="logradouro" name="logradouro" placeholder="ex: Rua João Luiz" required autocomplete="street-address">
                     </label>
@@ -399,12 +408,6 @@
                             <Option value="TO">TO</Option>
                         </select>
                     </label>
-
-                    <label for="cep">CEP:
-                        <input type="text" id="cep" name="cep" placeholder="Somente números" required autocomplete="postal-code">
-                    </label>
-
-                    <button type="submit" id="buscar-cep">Buscar Endereço</button>
 
                     <label for="telefone">Telefone:
                         <input type="tel" id="telefone" name="telefone" placeholder="Somente números" required autocomplete="tel">
