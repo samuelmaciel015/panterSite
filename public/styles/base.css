@@ -204,40 +204,33 @@ footer p:nth-child(3) {
 }
   
   /********************************FLIP CARDS********************************/
-.card1, .card2, .card3, .card4, .card5 {
+.card1, .card2, .card3 {
   border: 4px solid rgb(159, 179, 212);
   border-radius: 8px;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
   width: 300px;
   height: 300px;
   transform-style: preserve-3d;
-  transition: transform .5s;
+  transition: transform 1s;
   cursor: pointer;
   perspective: 1000px;
 }
 
-.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover{
-  transform: scale(1.05);
-}
-
-.card1.flipped, .card2.flipped, .card3.flipped, .card4.flipped, .card5.flipped {
+.card1.flipped, .card2.flipped, .card3.flipped {
   transform: rotateY(-180deg);
 }
 
 .front, .back {
   position: absolute;
+  width: 100%;
+  height: 100%;
   backface-visibility: hidden;
-  width: 300px;
-  height: 300px;
-  padding: 2rem;
-  justify-self: center;
+  padding: 120px 0 0 0;
 }
 
-.front h3{
+.front h3, .front p {
   justify-self: center;
-  align-content: center;
   text-align: center;
-  height: 50px;
 }
 
 .front p {
@@ -249,27 +242,7 @@ footer p:nth-child(3) {
   transform: rotateY(-180deg);
   padding: 0 10px;
   text-align:center;
-  padding: 30px;
-}
-
-.card1 p:nth-child(1) {
-  margin-top: 40px;
-}
-
-.card2 p:nth-child(1) {
-  margin-top: 50px;
-}
-
-.card3 p:nth-child(1) {
-  margin-top: 22px;
-}
-
-.card4 p:nth-child(1) {
-  margin-top: 23px;
-}
-
-.card5 p:nth-child(1) {
-  margin-top: 38px;
+  padding: 80px 10px;
 }
 
 main a {
@@ -303,6 +276,17 @@ main a {
   place-items: center;
 }
 
+.servico1, .servico2 {
+  border: 4px solid rgb(159, 179, 212);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  height: 300px;
+  padding: 2rem;
+  text-align: center;
+  transition: .1s linear;
+}
+
 .image {
   width: 100%;
   height: 150px;
@@ -313,6 +297,11 @@ main a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.servico1:hover, .servico2:hover {
+  transform: scale(1.05);
+  transition: .1s linear;
 }
 
 .servico-main section:nth-child(3) {
@@ -356,11 +345,9 @@ main a {
 .curso .image, .servico .image {
   width: 100%;
   height: 200px;
-  margin-bottom: 1rem;
 }
 .curso p, .servico p {
   text-align: justify;
-  margin-bottom: 3rem;
 }
 .curso-main a {
   margin: 1rem 0;
