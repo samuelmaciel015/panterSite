@@ -41,9 +41,8 @@
         color: white;
     }
 
-    .servico1:hover, .servico2:hover {
+    .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover{
         transform: none;
-        transition: none;
     }
 
     form fieldset {
