@@ -41,11 +41,6 @@
         color: white;
     }
 
-    .servico1:hover, .servico2:hover {
-        transform: none;
-        transition: none;
-    }
-
     form fieldset {
         min-width: initial;
     }

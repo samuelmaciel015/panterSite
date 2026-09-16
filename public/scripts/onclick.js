@@ -14,7 +14,7 @@ function reload() {
     window.location.reload();
 }
 function go_inicio() {
-    window.location.href = 'inicio.html';
+    window.location.href = 'index.html';
 }
 function go_servicos() {
     window.location.href = 'servicos.html';
