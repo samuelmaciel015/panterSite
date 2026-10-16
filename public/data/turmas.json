@@ -33,17 +33,15 @@
         },
         {
             "cursos": [
-                {
-                    "1": "Básico AVSEC",
-                    "2": "Inspeção de Segurança",
-                    "3": "AVSEC para Operador Aéreo",
-                    "4": "AVSEC para Operador de Aeródromo",
-                    "5": "AVSEC para Tripulante",
-                    "6": "AVSEC para Atendimento ao Passageiro",
-                    "7": "AVSEC para Operações de Solo",
-                    "8": "AVSEC para Carga Aérea",
-                    "9": "AVSEC para Vigilantes"
-                }
+                "Básico AVSEC",
+                "Inspeção de Segurança",
+                "AVSEC para Operador Aéreo",
+                "AVSEC para Operador de Aeródromo",
+                "AVSEC para Tripulante",
+                "AVSEC para Atendimento ao Passageiro",
+                "AVSEC para Operações de Solo",
+                "AVSEC para Carga Aérea",
+                "AVSEC para Vigilantes"
             ],
             "datas": [
                 {
