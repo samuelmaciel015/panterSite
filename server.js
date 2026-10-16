@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
         path.join(
             __dirname,
             "public",
-            "inicio.html"
+            "index.html"
         )
     );
 });
