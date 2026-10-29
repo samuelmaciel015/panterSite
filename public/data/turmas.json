@@ -4,117 +4,31 @@
             "cursos": [
                 "Básico AVSEC",
                 "Inspeção de Segurança",
-                "AVSEC para Operador Aéreo",
-                "AVSEC para Operador de Aeródromo",
-                "AVSEC para Tripulante",
-                "AVSEC para Atendimento ao Passageiro",
-                "AVSEC para Operações de Solo",
-                "AVSEC para Carga Aérea",
-                "AVSEC para Vigilantes"
+                "AVSEC para Atendimento ao Passageiro"
             ],
             "datas": [
                 {
-                    "Básico": "previsão para Janeiro de 2027",
-                    "Inspeção": "previsão para Janeiro de 2027",
-                    "Passageiro": "previsão para Janeiro de 2027"
+                    "CWB": ["03 à 11 de Novembro", "16 à 26 de Novembro", "24 à 25 de Novembro"],
+                    "BSB": ["previsão para Janeiro de 2027"],
+                    "GRU": ["previsão para Fevereiro de 2027"],
+                    "REC": ["08 à 11 de Dezembro"]
                 }
             ],
-            "local": "Cooplem Idiomas - QI 25, Comércio Local Bloco A, Loja 17, Guará II, Guará II, Brasília - DF, 71060-250",
-            "sigla": "BSB",
             "horarios": [
                 {
                     "manhã": "08:00 às 12:30",
+                    "tarde": "14:00 às 17:30",
                     "noite": "18:00 às 22:30",
                     "integral": "08:00 às 18:00"
                 }
-            ]
-        },
-        {
-            "cursos": [
-                "Básico AVSEC",
-                "Inspeção de Segurança",
-                "AVSEC para Operador Aéreo",
-                "AVSEC para Operador de Aeródromo",
-                "AVSEC para Tripulante",
-                "AVSEC para Atendimento ao Passageiro",
-                "AVSEC para Operações de Solo",
-                "AVSEC para Carga Aérea",
-                "AVSEC para Vigilantes"
             ],
-            "datas": [
-                {
-                    "Básico": "03 à 11 de Novembro",
-                    "Inspeção": "16 à 26 de Novembro",
-                    "Passageiro": "24 à 25 de Novembro"
-                }
+            "local": [
+                "Pac Log (terminal de cargas) - Av. Rocha Pombo, 306 - Área Institucional Aeroportuária, São José dos Pinhais - PR", 
+                "Cooplem Idiomas - QI 25, Comércio Local Bloco A, Loja 17, Guará II, Guará II, Brasília - DF, 71060-250",
+                "Panter Aviation (sede) - Av. Monteiro Lobato, 521 - Andar 2 - Centro, Guarulhos - SP, 07112-000",
+                "NAV Treinamentos - R. Dona Benvinda, 266 - Paissandu, Recife - PE, 50070-220"
             ],
-            "local": "Pac Log (terminal de cargas) - Av. Rocha Pombo, 306 - Área Institucional Aeroportuária, São José dos Pinhais - PR",
-            "sigla": "CWB",
-            "horarios": [
-                {
-                    "manhã": "08:00 às 12:30",
-                    "noite": "18:00 às 22:30",
-                    "integral": "08:00 às 18:00"
-                }
-            ]
-        },
-        {
-            "cursos": [
-                "Básico AVSEC",
-                "Inspeção de Segurança",
-                "AVSEC para Operador Aéreo",
-                "AVSEC para Operador de Aeródromo",
-                "AVSEC para Tripulante",
-                "AVSEC para Atendimento ao Passageiro",
-                "AVSEC para Operações de Solo",
-                "AVSEC para Carga Aérea",
-                "AVSEC para Vigilantes"
-            ],
-            "datas": [
-                {
-                    "Básico": "01 à 04 de Dezembro",
-                    "Inspeção": "14 à 18 de Dezembro",
-                    "Passageiro": "-"
-                }
-            ],
-            "local": "Panter Aviation (sede) - Av. Monteiro Lobato, 521 - Andar 2 - Centro, Guarulhos - SP, 07112-000",
-            "sigla": "GRU",
-            "horarios": [
-                {
-                    "manhã": "08:00 às 12:30",
-                    "noite": "18:00 às 22:30",
-                    "integral": "08:00 às 18:00"
-                }
-            ]
-        },
-        {
-            "cursos": [
-                "Básico AVSEC",
-                "Inspeção de Segurança",
-                "AVSEC para Operador Aéreo",
-                "AVSEC para Operador de Aeródromo",
-                "AVSEC para Tripulante",
-                "AVSEC para Atendimento ao Passageiro",
-                "AVSEC para Operações de Solo",
-                "AVSEC para Carga Aérea",
-                "AVSEC para Vigilantes"
-            ],
-            "datas": [
-                {
-                    "Básico": "08 à 11 de Dezembro",
-                    "Inspeção": "-",
-                    "Passageiro": "-"
-                }
-            ],
-            "local": "NAV Treinamentos - R. Dona Benvinda, 266 - Paissandu, Recife - PE, 50070-220",
-            "sigla": "REC",
-            "horarios": [
-                {
-                    "manhã": "08:00 às 12:30",
-                    "noite": "18:00 às 22:30",
-                    "integral": "08:00 às 18:00"
-                }
-            ]
+            "sigla": ["CWB", "BSB", "GRU", "REC"]
         }
     ]
 }
